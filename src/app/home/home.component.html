@@ -1,0 +1,22 @@
+<h1>Welcome</h1>
+
+<div class="try-it">
+  <p>clicked <span (click)="countClick()">this</span> {{ clickCount }} times</p>
+</div>
+
+<div class="try-it">
+  <p>
+    <input type="text" [(ngModel)]="name">
+    <br>
+    <strong>Said name: </strong> {{ name }}
+  </p>
+</div>
+
+<div class="try-it" [ngClass]="setClasses()">
+  <ng-template [ngIf]="clickCount > 4" [ngIfElse]="none">
+    <p>Click counter <strong>greater than</strong> 4</p>
+  </ng-template>
+  <ng-template #none>
+    <p>Click counter <strong>less than</strong> 4</p>
+  </ng-template>
+</div>

@@ -1,0 +1,29 @@
+$background: #c33;
+$outline: #f83;
+
+span {
+  font-weight: bold;
+  cursor: pointer;
+  background: lightgray;
+  user-select: none;
+}
+.try-it {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 2em;
+
+  input {
+    margin-bottom: 10px;
+    padding: 1em;
+  }
+}
+.active {
+  background-color: $background;
+  border: 2px solid $outline;
+  color: white;
+}
+.nonactive {
+  background-color: yellowgreen;
+  border: 2px solid whitesmoke;
+  color: black;
+}
